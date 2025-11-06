@@ -8,7 +8,6 @@
     --text-size-text-p: 14px;
     --color_primario: #2c3e50;
     --color_secundario: #3498db;
-    --color_terciario: #db3439;
 }
 
 * {
@@ -19,7 +18,7 @@
     top: 20px;
     right: 20px;
     padding: 10px 15px;
-    background-color: var(--color_terciario);
+    background-color: var(--color_primario);
     color: white;
     border: none;
     border-radius: 5px;
