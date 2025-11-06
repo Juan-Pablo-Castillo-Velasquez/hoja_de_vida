@@ -8,12 +8,25 @@
     --text-size-text-p: 14px;
     --color_primario: #2c3e50;
     --color_secundario: #3498db;
+    --color_terciario: #db3439;
 }
 
 * {
     box-sizing: border-box;
 }
-
+#btn_download{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: var(--color_terciario);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    z-index: 1000;
+}
 body {
     background-color: rgb(236, 236, 236);
     padding: 20px;
@@ -91,24 +104,54 @@ header {
 }
 
 .header_encabezado2 {
-    position: absolute;
-    bottom: -60px;
-    left: 40px;
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 5px solid white;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    background: white;
+  position: absolute;
+  bottom: -60px;
+  left: 40px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid white;
+  overflow: hidden;
+  background: white;
+  cursor: pointer; 
+  z-index: 10; 
 }
 
 .header_encabezado2 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
+
+.header_encabezado2::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(44, 62, 80, 0.0); 
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+.header_encabezado2:hover::after {
+  content: "View Profile";
+  background-color: rgba(17, 17, 18, 0.649);
+  pointer-events: none;
+  transform: translateX(2px);
+  transition: 0.37s;
+
+
+}
+
+
 
 aside {
     grid-area: aside;
