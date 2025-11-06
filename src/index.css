@@ -112,10 +112,11 @@ header {
 
 aside {
     grid-area: aside;
-    padding: 30px 20px;
+    padding: 35px 35px;
     background-color: #f8f9fa;
     border-right: 1px solid #e9ecef;
     margin: 70px 0px 0px 0px;
+    
 }
 
 .side-class {
@@ -124,7 +125,28 @@ aside {
     position: relative;
     padding-top: 40px;
 }
-
+.side-class .habilidades li{
+    list-style: none;
+}
+.side-class .habilidades li::before{
+    content: "•";
+    color: var(--color_secundario);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+.side-class .Education li{
+    list-style: none;
+    font-weight: bold;
+    color: var(--color_primario);
+}
+.side-class .Education li::before{
+    color: var(--color_secundario);
+    display: inline-block;
+    content: "•";
+    width: 1em;
+    margin-left: -1em;
+}
 .side-class section {
     margin-bottom: 30px;
 }
@@ -251,6 +273,10 @@ article {
     padding-left: 15px;
 }
 
+.article_main .experiencia-laboral li:nth-child(1) {
+    font-weight: bold;
+}
+
 .article_main .experiencia-laboral li:before {
     content: "•";
     color: var(--color_secundario);
@@ -259,7 +285,6 @@ article {
     font-weight: bold;
 }
 
-/* FOOTER */
 footer {
     grid-area: footer;
     padding: 0;
@@ -339,7 +364,9 @@ main footer img {
     .side-class {
         padding-top: 0;
     }
-
+.side-class .habilidades li::before{
+content: "•";
+}
     .article_main h2 {
         font-size: 20px;
     }
