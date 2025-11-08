@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hoja-de-vida-pearl.vercel.app/sitemap.xml
