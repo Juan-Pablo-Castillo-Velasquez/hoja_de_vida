@@ -1,4 +1,4 @@
-// ...existing code...
+
 # Hoja de Vida
 
 Este repositorio contiene una versión web de una hoja de vida personal (CV) diseñada para mostrarse en el navegador. Incluye HTML, CSS y recursos estáticos.
